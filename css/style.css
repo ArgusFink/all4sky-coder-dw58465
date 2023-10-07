@@ -23,6 +23,7 @@ body {
     min-height: 140vh;
     grid-template-columns: 15% 1fr 0.5fr;
     grid-template-rows: 135px 50% auto auto;
+
 }
 
 #gridcursos {
@@ -38,6 +39,20 @@ body {
     grid-template-rows: 135px;
 }
 
+#gridmision {
+
+    /* display: grid; */
+    grid-template-areas:
+
+    "header     header"
+    /* "footer     footer" */
+    "tiraimg    mainmisión"
+    "footer     footer";
+
+    grid-template-columns: 15% 1fr;
+
+}
+
 #youtube {
 
     padding: 0 20px;
@@ -50,7 +65,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     grid-area: aspirantes;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;
     margin-top: 30px;
     margin-bottom: 60px;
 
@@ -67,7 +82,7 @@ header {
     background-size: cover;
     position: fixed;
     width: 100%;
-    top: 0px;    
+    top: 0;    
 
 }
 
@@ -114,7 +129,7 @@ footer {
 }
 
 footer ul li a {
-    color: black;
+    color: #000;
 }
 
 header nav ul {
@@ -134,8 +149,7 @@ header nav ul li {
 header nav ul li a {          
     color: grey;
     background-color: beige;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-radius: 12px 12px 0px 0px;
     border: 4px solid rgb(219, 234, 243);
     padding: 0 12px;
 }
@@ -154,7 +168,7 @@ header nav ul li a {
 
 #portada h2 {
     margin-top: 80px;
-    font-size: 70px;   
+    font-size: 70px;
 }
 
 #portada p {
@@ -193,6 +207,8 @@ header nav ul li a {
 }
 
 #mainmision {
+
+    grid-area: mainmision;
     margin-top: 180px;
     font-size: 26px;
 }
@@ -217,6 +233,7 @@ header nav ul li a {
     grid-area: maincursos;
     margin-top: 90px;
     font-size: 26px;
+    
 
 }
 
@@ -268,6 +285,7 @@ header nav ul li a {
     
 }
 
+
 @media screen and (max-width: 1100px) {
 
     header nav ul li {        
@@ -311,7 +329,7 @@ header nav ul li a {
     }
 
     #portada h2 {
-
+    
         margin-top: 80px;
         font-size: 49px;   
 
@@ -351,7 +369,7 @@ header nav ul li a {
 
     .curso h2{
 
-        font-size: 17px;
+        font-size: 170px;
 
     }
         
@@ -360,7 +378,7 @@ header nav ul li a {
 
 @media screen and (max-width: 568px) {
 
-    header nav ul li {        
+    header nav ul li a {        
 
         font-size: 8px;
 
