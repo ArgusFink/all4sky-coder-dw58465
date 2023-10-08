@@ -377,7 +377,7 @@ header nav ul li a {
 #mainconsultas {
 
     grid-area: consultas;
-    margin-right: 15px;
+    margin-right: 20px;
 
 }
 
@@ -646,7 +646,7 @@ header nav ul li a {
 
     #mainconsultas {
 
-        font-size: 75%;
+        font-size: 60%;
 
     }
 
