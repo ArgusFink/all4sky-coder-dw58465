@@ -35,21 +35,61 @@ body {
     "tiraimg    maincursos"
     "footer     footer ";
     min-height: 140vh;
-    grid-template-columns: 15%;
-    grid-template-rows: 135px;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 135px 50% auto auto;
 }
 
 #gridmision {
 
-    /* display: grid; */
+    display: grid;
     grid-template-areas:
 
-    "header     header"
-    /* "footer     footer" */
-    "tiraimg    mainmisión"
-    "footer     footer";
-
+    "header header"
+    "tiraimg    mainmision"
+    /* "tiraimg    mainmisión" */
+    "footer      footer";
+    min-height: 140vh;
     grid-template-columns: 15% 1fr;
+    grid-template-rows: 135px auto auto;
+
+}
+
+#gridinversores {
+
+    display: grid;
+    grid-template-areas:
+    
+    "header header"
+    "tiraimg    inversores"
+    /* "tiraimg    mainmisión" */
+    "footer      footer";
+    ;
+
+    min-height: 140vh;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 135px auto auto;
+
+}
+
+#mainInversores {
+
+    grid-area: inversores;
+
+}
+
+#piloto1 {
+
+    width: 40%;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+#piloto2 {
+
+    width: 40%;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
 }
 
@@ -57,6 +97,7 @@ body {
 
     padding: 0 20px;
     border-radius: 250px;
+    
 
 }
 
@@ -92,6 +133,7 @@ header {
     margin-left: 5px;
     background-image: url(../assets/images/tirafull.jpg);
     background-size: contain;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
 }
 
@@ -107,15 +149,16 @@ header {
 
 main {
 
-    margin-top: 180px;
+    margin-top: 100px;
     margin-left: 50px;
     font-size: 26px;
     margin-bottom: 150px;
+    max-width: 75%;
 }
 
-main h2 {
+/* main h2 {
     font-size: 34px;
-}
+} */
 
 footer {
 
@@ -134,7 +177,7 @@ footer ul li a {
 
 header nav ul {
     display: flex;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 
@@ -209,8 +252,9 @@ header nav ul li a {
 #mainmision {
 
     grid-area: mainmision;
-    margin-top: 180px;
-    font-size: 26px;
+    margin-top: 100px;
+    /* font-size: 26px; */
+    max-width: 75%;
 }
 
 #mainmision article a {
@@ -254,8 +298,8 @@ header nav ul li a {
 
     max-width: 450px;
     margin: 40px;
-    padding: 10px;
-    font-size: 24px;
+    /* padding: 10px;
+    font-size: 24px; */
     text-align: center;
     background-color: rgb(214, 236, 185);
     border: 2px solid gray;
@@ -273,18 +317,89 @@ header nav ul li a {
 }
 
 #inversores img {
-    height: 200px;
     margin: 15px;
     border: 2px solid gray ;
     border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #plancarrera {
     
-    width: 90%;
+    max-width: 90%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     
 }
 
+#imginv1 {
+
+    max-width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+#imginv2 {
+
+    max-width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+#imginv3 {
+
+    max-width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+#imginv4 {
+
+    max-width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+#gridconsultas {
+
+    display: grid;
+    grid-template-areas: 
+    
+    "header     header"
+    "tiraimg    consultas"
+    "footer     footer"
+    ;
+
+    min-height: 140vh;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 135px auto auto;
+
+}
+
+#mainconsultas {
+
+    grid-area: consultas;
+    margin-right: 15px;
+
+}
+
+#imgLanding {
+
+    width: 80%;
+    border-radius: 12px;
+    border: 2px solid gray;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#fieldset {
+
+    border-radius: 12px;
+
+}
+
+#formconsulta {
+
+    padding: 12px;
+
+}
 
 @media screen and (max-width: 1100px) {
 
@@ -323,7 +438,7 @@ header nav ul li a {
     footer {
 
         padding: 20px;
-        margin-bottom: 18px;
+        /* margin-bottom: 18px; */
         justify-content: space-around
 
     }
@@ -363,16 +478,75 @@ header nav ul li a {
 
     .curso {
 
-        font-size: 17px;
+        font-size: 100%;
 
     }
 
     .curso h2{
 
-        font-size: 170px;
+        font-size: 70px;
 
     }
-        
+
+    #artmis1 {
+
+        font-size: 75%;
+
+    }
+
+    #artmis2 {
+
+        font-size: 75%;
+
+    }
+
+    #mainInversores {
+
+        font-size: 20px;
+
+    }
+
+    /* #imginv1 {
+
+        max-width: 80%;
+    
+    }
+    
+    #imginv2 {
+    
+        max-width: 80%;
+    
+    }
+    
+    #imginv3 {
+    
+        max-width: 80%;
+    
+    }
+    
+    #imginv4 {
+    
+        max-width: 80%;
+    
+    } */
+
+    #mainconsultas {
+
+        font-size: 105%;
+
+    }
+
+    #maincursos h2 {
+
+        font-size: 46px;
+
+    }
+
+    #cursos {
+
+        font-size: 70%;
+
+    }
 
 }
 
@@ -393,7 +567,6 @@ header nav ul li a {
     footer {
 
         padding: 20px;
-        margin-bottom: 18px;
         justify-content: space-around
 
     }
@@ -421,6 +594,72 @@ header nav ul li a {
     
         width: 85%;
         
+    }
+
+    #artmis1 {
+
+        font-size: 50%;
+
+    }
+
+    #artmis2 {
+
+        font-size: 50%;
+
+    }
+
+    /* #imginv1 {
+
+        max-width: 60%;
+    
+    }
+    
+    #imginv2 {
+    
+        max-width: 60%;
+    
+    }
+    
+    #imginv3 {
+    
+        max-width: 60%;
+    
+    }
+    
+    #imginv4 {
+    
+        max-width: 60%;
+            
+    } */
+
+    #mainInversores {
+
+        font-size: 20px;
+
+    }
+
+    #mainInversores {
+
+        font-size: 14px;
+
+    }
+
+    #mainconsultas {
+
+        font-size: 75%;
+
+    }
+
+    #maincursos h2 {
+
+        font-size: 36px;
+
+    }
+
+    #cursos {
+
+        font-size: 40%;
+
     }
 
 }
