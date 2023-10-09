@@ -1,0 +1,22 @@
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;    
+    align-items: end;
+    background-image: url("../../assets/images/cielo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    top: 0;
+        
+    .logoname {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        #logo {
+            width: 150px;
+        }
+    }
+}

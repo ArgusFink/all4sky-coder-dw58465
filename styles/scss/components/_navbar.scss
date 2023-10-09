@@ -1,0 +1,22 @@
+nav {
+    ul {
+        display: flex;
+        margin-bottom: 2px;
+        li {        
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 1.5px;    
+            a {          
+                color: grey;
+                background-color: beige;
+                border-radius: 12px 12px 0px 0px;
+                border: 4px solid rgb(219, 234, 243);
+                padding: 0 12px;
+
+                &:hover {
+                    color:rgba(247, 173, 36, 0.808)
+                }
+            }    
+        }    
+    }
+}

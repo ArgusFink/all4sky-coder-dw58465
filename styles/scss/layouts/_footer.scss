@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: footer;
+    background-color: rgb(170, 225, 250);
+    font-size: 20px;
+
+    ul li a {
+        color: #000;
+    }
+}
