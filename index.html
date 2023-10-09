@@ -4,6 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="assets/images/logo.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        
         <link rel="stylesheet" href="../styles/css/style.css">
         <title>ALL 4 SKY</title>
     </head>
@@ -43,7 +50,7 @@
             <section id="portada">
 
                 <div>
-                    <h2>All 4 Sky</h2>
+                    <h2 class="animate__animated animate__backInDown">All 4 Sky</h2>
                     <p>Si tu sueño es volar y convertirte en piloto comercial, estás
                     ingresando al espacio aéreo <strong>(All "for" Sky).</strong> Que tan real se volvería si tendrías la
                     oportunidad de pagar parte de tus horas de vuelo de
@@ -64,13 +71,13 @@
                         
             <!-- aspirantes -->
             <section id="aspirantes">
-                <article class="aspirante">
+                <article data-aos="flip-down" class="aspirante">
                     <h3>Alumnos</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <a href="./pages/mision.html"><i>Saber mas</i></a>                    
                 </article>
 
-                <article class="aspirante">
+                <article data-aos="fade-down" class="aspirante">
                     <h3>Inversor</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     <a href="./pages/mision.html"><i>Saber mas</i></a>                    
@@ -107,7 +114,14 @@
                 </div>
             </footer>
 
-        </div>      
+        </div>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+
     </body>
 
 </html>

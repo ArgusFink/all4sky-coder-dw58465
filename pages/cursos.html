@@ -4,6 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../assets/images/logo.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
         <link rel="stylesheet" href="../styles/css/style.css">
         <title>ALL 4 SKY | CURSOS</title>
     </head>
@@ -38,7 +45,7 @@
             <!-- *** MAIN *** -->
             <main id="maincursos">
 
-                <h2>Cursos</h2>
+                <h2 class="animate__animated animate__flipInX">Cursos</h2>
                 <div id="cursos">                    
                     <article class="curso">
                         <h3>Piloto Privado</h3><br>
@@ -46,7 +53,7 @@
                         <a href="#"><i>Saber mas</i></a>
                     </article>
 
-                    <article class="curso">                
+                    <article data-aos="flip-left" class="curso">                
                         <h3>Piloto Comercial</h3><br>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente ducimus qui id dignissimos earum voluptates animi alias numquam aliquam fugiat laudantium placeat cupiditate minima cumque molestiae, temporibus nihil ad architecto!</p><br>
                         <a href="#"><i>Saber mas</i></a>                    
@@ -58,7 +65,7 @@
                         <a href="#"><i>Saber mas</i></a>                    
                     </article>
     
-                    <article class="curso">
+                    <article data-aos="fade-down-left" class="curso">
                         <h3>Piloto comercial de Primera Clase</h3><br>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente ducimus qui id dignissimos earum voluptates animi alias numquam aliquam fugiat laudantium placeat cupiditate minima cumque molestiae, temporibus nihil ad architecto!</p><br>
                         <a href="#"><i>Saber mas</i></a>                    
@@ -98,7 +105,13 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9280.596035343793!2d-58.63859736484823!3d-34.675249908845466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc75545370ed9%3A0x6f5e5ec2e944c8ed!2zQmFzZSBBw6lyZWEgTW9yw7Nu!5e0!3m2!1ses!2sar!4v1693347753846!5m2!1ses!2sar" width="260" height="157.5" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </footer>
-        </div>        
-    </body>
+        </div>
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+        <script>
+            AOS.init();
+        </script>
+
+    </body>
 </html>
