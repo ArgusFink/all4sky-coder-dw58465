@@ -132,22 +132,22 @@ body {
         box-shadow: $shadow;
     
         #imginv1 {
-            max-width: 100%;
+            max-width: 90%;
             box-shadow: $shadow;
         }
     
         #imginv2 {
-            max-width: 100%;
+            max-width: 90%;
             box-shadow: $shadow;
         }
         
         #imginv3 {
-            max-width: 100%;
+            max-width: 90%;
             box-shadow: $shadow;;
         }
         
         #imginv4 {
-            max-width: 100%;
+            max-width: 90%;
             box-shadow: $shadow;;
         }
     }
@@ -348,6 +348,12 @@ main {
 
     #mainInversores {
         font-size: 20px;
+
+         #inversores {
+             img {
+                width: 80%;
+             }
+        }
     }
 
     #mainconsultas {
@@ -405,10 +411,6 @@ main {
 
     #artmis1 a {
         font-size: 77%;
-    }
-
-    #mainInversores {
-        font-size: 20px;
     }
 
     #mainInversores {

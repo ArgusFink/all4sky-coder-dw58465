@@ -156,19 +156,19 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 #mainInversores #inversores img #imginv1 {
-  max-width: 100%;
+  max-width: 90%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 #mainInversores #inversores img #imginv2 {
-  max-width: 100%;
+  max-width: 90%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 #mainInversores #inversores img #imginv3 {
-  max-width: 100%;
+  max-width: 90%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 #mainInversores #inversores img #imginv4 {
-  max-width: 100%;
+  max-width: 90%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -344,6 +344,9 @@ main {
   #mainInversores {
     font-size: 20px;
   }
+  #mainInversores #inversores img {
+    width: 80%;
+  }
   #mainconsultas {
     font-size: 105%;
   }
@@ -386,9 +389,6 @@ main {
   }
   #artmis1 a {
     font-size: 77%;
-  }
-  #mainInversores {
-    font-size: 20px;
   }
   #mainInversores {
     font-size: 14px;
