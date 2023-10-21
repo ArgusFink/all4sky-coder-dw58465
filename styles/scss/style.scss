@@ -73,17 +73,18 @@ ul {
             margin: 50px;
             font-size: 24px;
             text-align: center;
-            background-color: burlywood;
+            background-color: #fae7cd;
             box-shadow: $shadow;
             border-radius: 20px;
             border: $border;
 
             a {
                 text-align: center;
-                color: cadetblue;
-                background-color: blanchedalmond;
+                color: #000000;
+                background-color: rgb(245, 178, 77);
                 border-radius: 4px;
                 text-decoration: none;
+                padding: 0 10px;
             }
 
             p {

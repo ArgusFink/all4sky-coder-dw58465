@@ -116,17 +116,18 @@ ul {
   margin: 50px;
   font-size: 24px;
   text-align: center;
-  background-color: burlywood;
+  background-color: #fae7cd;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 20px;
   border: 2px solid gray;
 }
 #gridindex #aspirantes .aspirante a {
   text-align: center;
-  color: cadetblue;
-  background-color: blanchedalmond;
+  color: #000000;
+  background-color: rgb(245, 178, 77);
   border-radius: 4px;
   text-decoration: none;
+  padding: 0 10px;
 }
 #gridindex #aspirantes .aspirante p {
   margin: 20px;
