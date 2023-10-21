@@ -186,8 +186,8 @@ ul {
 }
 
 main {
-    margin-top: 100px;
-    margin-left: 50px;
+    margin-top: 80px;
+    margin-left: 25px;
     font-size: 26px;
     margin-bottom: 150px;
     max-width: 75%;
@@ -196,8 +196,8 @@ main {
 #mainmision {
 
     grid-area: mainmision;
-    margin-top: 100px;
-    max-width: 75%;
+    //margin-top: 100px;
+    //max-width: 75%;
 }
 
 #mainmision article a {
@@ -266,20 +266,22 @@ main {
     "tiraimg    consultas"
     "footer     footer";
     min-height: 140vh;
-    grid-template-columns: 15% 1fr;
+    grid-template-columns: 15% auto;
     grid-template-rows: 135px auto auto;
 }
 
 #mainconsultas {
+    grid-area: consultas;
+    margin-right: 40px;
+    //margin-left: 2px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    grid-area: consultas;
-    margin-right: 20px;
+    justify-content: space-evenly;
+    max-width: 100%;
 }
 
 #imgLanding {
-    width: 100%;
+    width: 87%;
     border-radius: 12px;
     border: $border;
     box-shadow: $shadow;
@@ -291,9 +293,10 @@ main {
 }
 
 #formconsulta {
-    padding: 50px;
+    margin-left: -17px;
+    padding: 12px;
     border: solid 2px gray;
-    border-radius: 12px;
+    border-radius: 12px;    
 }
 
 .navbar {
@@ -397,7 +400,7 @@ main {
     }
 
     #mainconsultas {
-        font-size: 105%;
+        //font-size: 105%;
     }
 
     #maincursos h2 {
@@ -509,7 +512,7 @@ main {
     }
 
     #mainconsultas {
-        font-size: 60%;
+        font-size: 80%;
     }
 
     #maincursos h2 {
