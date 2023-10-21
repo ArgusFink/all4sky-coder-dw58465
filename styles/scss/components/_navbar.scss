@@ -1,12 +1,14 @@
-nav {
+.navBarDesktop {
     ul {
         display: flex;
-        margin-bottom: 2px;
+        margin-bottom: -1px;
         li {        
             font-size: 26px;
             font-weight: bold;
             margin: 0 1.5px;    
-            a {          
+            a {   
+                list-style-type: none;
+                text-decoration: none;     
                 color: grey;
                 background-color: beige;
                 border-radius: 12px 12px 0px 0px;

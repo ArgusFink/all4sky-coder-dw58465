@@ -6,23 +6,25 @@
   text-decoration: none;
 }
 
-nav ul {
+.navBarDesktop ul {
   display: flex;
-  margin-bottom: 2px;
+  margin-bottom: -1px;
 }
-nav ul li {
+.navBarDesktop ul li {
   font-size: 26px;
   font-weight: bold;
   margin: 0 1.5px;
 }
-nav ul li a {
+.navBarDesktop ul li a {
+  list-style-type: none;
+  text-decoration: none;
   color: grey;
   background-color: beige;
   border-radius: 12px 12px 0px 0px;
   border: 4px solid rgb(219, 234, 243);
   padding: 0 12px;
 }
-nav ul li a:hover {
+.navBarDesktop ul li a:hover {
   color: rgba(247, 173, 36, 0.808);
 }
 
@@ -59,11 +61,16 @@ footer {
 }
 footer ul li a {
   color: #000;
+  text-decoration: none;
 }
 
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: rgb(219, 234, 243);
+}
+
+ul {
+  padding-left: 0px;
 }
 
 #gridindex {
@@ -90,7 +97,7 @@ body {
 #gridindex #portada div p {
   margin: 30px 0px;
   font-size: 26px;
-  max-width: 65%;
+  max-width: 83%;
   text-align: center;
   display: inline-block;
 }
@@ -104,8 +111,8 @@ body {
 }
 #gridindex #aspirantes .aspirante {
   width: 320px;
-  height: 188px;
-  margin: 20px;
+  height: 230px;
+  margin: 50px;
   font-size: 24px;
   text-align: center;
   background-color: burlywood;
@@ -118,6 +125,7 @@ body {
   color: cadetblue;
   background-color: blanchedalmond;
   border-radius: 4px;
+  text-decoration: none;
 }
 #gridindex #aspirantes .aspirante p {
   margin: 20px;
@@ -174,13 +182,13 @@ body {
 }
 
 #piloto1 {
-  width: 40%;
+  width: 60%;
   border-radius: 12px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #piloto2 {
-  width: 40%;
+  width: 60%;
   border-radius: 12px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -209,7 +217,6 @@ main {
 #mainmision {
   grid-area: mainmision;
   margin-top: 100px;
-  /* font-size: 26px; */
   max-width: 75%;
 }
 
@@ -219,10 +226,12 @@ main {
   color: cadetblue;
   background-color: blanchedalmond;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 #mainmision article img {
   margin-right: 20px;
+  margin-bottom: 35px;
   border: 2px solid gray;
 }
 
@@ -239,12 +248,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow-x: hidden;
 }
 #maincursos #cursos .curso {
   max-width: 450px;
-  margin: 40px;
-  /* padding: 10px;
-  font-size: 24px; */
+  margin: 50px;
+  padding: 40px;
   text-align: center;
   background-color: rgb(214, 236, 185);
   border: 2px solid gray;
@@ -257,10 +266,12 @@ main {
   color: cadetblue;
   background-color: blanchedalmond;
   border-radius: 4px;
+  text-decoration: none;
 }
 #maincursos #plancarrera {
   max-width: 90%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: 60px 0;
 }
 
 #gridconsultas {
@@ -272,12 +283,15 @@ main {
 }
 
 #mainconsultas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   grid-area: consultas;
   margin-right: 20px;
 }
 
 #imgLanding {
-  width: 80%;
+  width: 100%;
   border-radius: 12px;
   border: 2px solid gray;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -288,11 +302,31 @@ main {
 }
 
 #formconsulta {
-  padding: 12px;
+  padding: 50px;
+  border: solid 2px gray;
+  border-radius: 12px;
+}
+
+.navbar {
+  display: none;
+}
+
+#mainconsultas #formconsulta .sendC {
+  background-color: #f8d696;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 20px;
+  border-radius: 12px;
+  border: 2px solid rgb(161, 153, 153);
+  margin-top: 17px;
+}
+#mainconsultas #formconsulta .sendC:hover {
+  background-color: #ec9e37;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 @media screen and (max-width: 1100px) {
-  header nav ul li {
+  header .navBarDesktop ul li {
     font-size: 18px;
   }
   header {
@@ -321,7 +355,7 @@ main {
   }
   #gridindex #aspirantes .aspirante {
     font-size: 18px;
-    height: 132px;
+    height: 160px;
   }
   #youtube {
     width: 65%;
@@ -357,27 +391,64 @@ main {
   #cursos {
     font-size: 70%;
   }
+  #piloto1 {
+    width: 90%;
+  }
+  #piloto2 {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 568px) {
-  header nav ul li a {
-    font-size: 8px;
+  #gridindex {
+    grid-template-rows: 61px 50% auto auto;
+  }
+  #gridmision {
+    grid-template-rows: 61px 65% auto;
+  }
+  #gridcursos {
+    grid-template-rows: 61px 50% auto auto;
+  }
+  #gridinversores {
+    grid-template-rows: 61px 60% auto auto;
+  }
+  #gridconsultas {
+    grid-template-rows: 61px 60% auto;
+  }
+  .navBarDesktop {
+    display: none;
+  }
+  header .logoname {
+    display: none;
+  }
+  .navbar {
+    display: initial;
+    background-image: url("../../assets/images/cielo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  #logonav {
+    width: 30%;
   }
   #aspirantes {
     align-items: center;
   }
   footer {
-    padding: 20px;
+    padding: 25px;
     justify-content: space-around;
+  }
+  #gridindex #portada {
+    margin-right: -7px;
   }
   #gridindex #portada div h2 {
     font-size: 30px;
   }
   #gridindex #portada div p {
-    font-size: 16px;
+    font-size: 14px;
   }
   #gridindex #aspirantes .aspirante {
     font-size: 14px;
-    height: 111px;
+    height: 33%;
   }
   #plancarrera {
     width: 85%;
@@ -402,6 +473,25 @@ main {
   }
   #cursos {
     font-size: 40%;
+  }
+  #piloto1 {
+    width: 90%;
+  }
+  #piloto2 {
+    width: 90%;
+  }
+  #maincursos #cursos .curso {
+    margin: 15px;
+    padding: 10px;
+  }
+  #maincursos #cursos .curso p {
+    font-size: 14px;
+  }
+  #maincursos #cursos .curso a {
+    font-size: 14px;
+  }
+  #mainmision article a {
+    font-size: 10px;
   }
 }
 

@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../assets/images/logo.png">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
         <link rel="stylesheet" href="../styles/css/style.css">
         <title>ALL 4 SKY | MISIÓN - Escuela de vuelo - Financiación Oportunidad Pilotos - Inversión Oportunidad Inversores </title>
     </head>
@@ -13,7 +16,7 @@
             <!-- *** HEADER *** -->
             <header>
                 <!-- navbar -->
-                <nav>
+                <nav class="navBarDesktop">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="#">Misión</a></li>
@@ -21,6 +24,40 @@
                         <li><a href="./inversores.html">Inversores</a></li>
                         <li><a href="./consultas.html">Consultas</a></li>
                     </ul>
+                </nav>
+                          
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="../index.html"><img id="logonav" src="../assets/images/logo.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">All 4 SKY</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Misión</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./cursos.html">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./inversores.html">Inversores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./consultas.html">Consultas</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                 </nav>
 
                 <div class="logoname">
@@ -40,14 +77,14 @@
             <main id="mainmision">
 
                 <article id=artmis1>
-                    <h2>Misión</h2><br>
+                    <h2><strong>Misión</strong></h2><br>
                     <p> Acercar la posibilidad real de ser piloto a más personas, sin contar con la limitante económica que implica la erogación total durante la carrera, sino financiado. Brindar oportunidades de inversión con mínimos aportes tanto a particulares como a corporaciones aprovechando la tecnología blockchain.
                     <br><br>
                     Como piloto y de acuerdo al promedio y ranking con otros alumnos sobre la currícula teórica, se aplicará una tabla porcontual para ser beneficiarios y afrontar el costo del aerocombustible para continuar sumando horas de vuelo hasta alcanzar las 200hs. y obtener la liciencia de piloto comercial. Una vez trabajando se descontará del sueldo mensualmente con el fin de devolver lo financiado por terceros.     
                     <br><br>
                     Como inversor, y para ser acreedor con mínimos aportes, te invitamos a continuar leyendo el apartado especial.          
                     </p><br>
-                    <a href="../pages/cursos.html">Quiero ser Piloto</a>
+                    <a href="../pages/cursos.html">Quiero ser Piloto</a>        
                     <a href="../pages/inversores.html">Quiero ser Inversor</a>
                 </article>
             
@@ -67,9 +104,9 @@
                     <br>
                     <h4>Nuestras redes</h4>
                     <ul>
-                        <li><a href="https://www.instagram.com/" target="_blank"><img width="50" src="../assets/images/icons/instagram.png" alt="Ícono Instagram">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/" target="_blank"><img width="35" src="../assets/images/icons/facebook.png" alt="Ícono Facebook">Facebook</a></li>
-                        <li><a href="https://www.youtube.com/"target="_blank"><img width="35" src="../assets/images/icons/youtube.png" alt="Ícono Youtube">Youtube</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img width="35" src="../assets/images/icons/instagram.png" alt="Ícono Instagram"> Instagram</a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><img width="35" src="../assets/images/icons/facebook.png" alt="Ícono Facebook"> Facebook</a></li>
+                        <li><a href="https://www.youtube.com/"target="_blank"><img width="35" src="../assets/images/icons/youtube.png" alt="Ícono Youtube"> Youtube</a></li>
                     </ul>
                 </div>
 
@@ -77,9 +114,9 @@
                     <br>                    
                     <h4>Contacto</h4>
                     <ul>
-                        <li><img width="35" src="../assets/images/icons/mail.png" alt="Dirección Mail">consultas@all4sky.com.ar</a></li>
-                        <li><img width="35" src="../assets/images/icons/whatsapp.png" alt="Número Whatsapp">+54 911 1111 1111</a></li>
-                        <li><img width="35" src="../assets/images/icons/phone.png" alt="Número Teléfono">+54 11 1111 1111</a></li>
+                        <li><img width="35" src="../assets/images/icons/mail.png" alt="Dirección Mail"> consultas@all4sky.com.ar</a></li>
+                        <li><img width="35" src="../assets/images/icons/whatsapp.png" alt="Número Whatsapp"> +54 911 1111 1111</a></li>
+                        <li><img width="35" src="../assets/images/icons/phone.png" alt="Número Teléfono"> +54 11 1111 1111</a></li>
                     </ul>
                 </div>
 
@@ -90,7 +127,8 @@
                 </div>
             </footer>
 
-        </div>        
-    </body>
+        </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>        
+    </body>
 </html>

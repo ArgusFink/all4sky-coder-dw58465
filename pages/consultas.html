@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../assets/images/logo.png">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
         <link rel="stylesheet" href="../styles/css/style.css">
         <title>ALL 4 SKY | CONSULTAS - Escuela de vuelo - Financiación Oportunidad Pilotos - Inversión Oportunidad Inversores</title>
     </head>
@@ -15,7 +18,7 @@
             <!-- ***HEADER *** -->
             <header>
                 <!-- navbar -->
-                <nav>
+                <nav class="navBarDesktop">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="./mision.html">Misión</a></li>
@@ -23,6 +26,40 @@
                         <li><a href="./inversores.html">Inversores</a></li>
                         <li><a href="#">Consultas</a></li>
                     </ul>
+                </nav>
+
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="../index.html"><img id="logonav" src="../assets/images/logo.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">All 4 SKY</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="../index.html"">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./mision.html">Misión</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./cursos.html">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./inversores.html">Inversores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./consultas.html">Consultas</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                 </nav>
 
                 <div class="logoname">
@@ -42,32 +79,32 @@
                         <div id="formconsulta">
                             <div>
                                 <div>
-                                    <label for="apellido">Apellido</label>
+                                    <label for="apellido">Apellido</label><br>
                                     <input id="apellido" type="text">                        
                                 </div>
 
                                 <div>
-                                    <label for="nombre">Nombre</label>
+                                    <label for="nombre">Nombre</label><br>
                                     <input id="nombre" type="text">                        
                                 </div>
 
                                 <div>
-                                    <label for="empresa">Empresa</label>
+                                    <label for="empresa">Empresa</label><br>
                                     <input id="empresa" type="text">                        
                                 </div>
                                 
                                 <div>
-                                    <label for="mail">Mail</label>
+                                    <label for="mail">Mail</label><br>
                                     <input id="mail" type="text">                        
                                 </div>
                                 
                                 <div>
-                                    <label for="telefono">Teléfono</label>
+                                    <label for="telefono">Teléfono</label><br>
                                     <input id="telefono" type="text">                        
                                 </div>
 
                                 <div>
-                                    <label for="motivo">Motivo de consulta</label>
+                                    <label for="motivo">Motivo de consulta</label><br>
                                     <select required name="" id="motivo">
                                         <option value="" disabled selected>...por favor elija una opcion</option>
                                         <option value="">Quiero ser piloto</option>
@@ -82,15 +119,12 @@
                                 <br>
                                 <label for="observaciones">Observaciones</label>
                                 <br>
-                                <textarea name="" id="observaciones" cols="20" rows="10"></textarea>
+                                <textarea name="" id="observaciones" cols="50" rows="10"></textarea>
                             </div>
                             
-                            <input type="submit" value="Enviar consulta">
+                            <input type="submit" class="sendC" value="Enviar consulta">
 
-                        </div>
-
-
-                        
+                        </div>                        
                     </fieldset>                
                 </form>
                 
@@ -107,9 +141,9 @@
                     <br>
                     <h4>Nuestras redes</h4>
                     <ul>
-                        <li><a href="https://www.instagram.com/" target="_blank"><img width="50" src="../assets/images/icons/instagram.png" alt="Ícono Instagram">Instagram</a></li>
-                        <li><a href="https://www.facebook.com/" target="_blank"><img width="35" src="../assets/images/icons/facebook.png" alt="Ícono Facebook">Facebook</a></li>
-                        <li><a href="https://www.youtube.com/"target="_blank"><img width="35" src="../assets/images/icons/youtube.png" alt="Ícono Youtube">Youtube</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img width="35" src="../assets/images/icons/instagram.png" alt="Ícono Instagram"> Instagram</a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><img width="35" src="../assets/images/icons/facebook.png" alt="Ícono Facebook"> Facebook</a></li>
+                        <li><a href="https://www.youtube.com/"target="_blank"><img width="35" src="../assets/images/icons/youtube.png" alt="Ícono Youtube"> Youtube</a></li>
                     </ul>
                 </div>
 
@@ -117,9 +151,9 @@
                     <br>                    
                     <h4>Contacto</h4>
                     <ul>
-                        <li><img width="35" src="../assets/images/icons/mail.png" alt="Dirección Mail">consultas@all4sky.com.ar</a></li>
-                        <li><img width="35" src="../assets/images/icons/whatsapp.png" alt="Número Whatsapp">+54 911 1111 1111</a></li>
-                        <li><img width="35" src="../assets/images/icons/phone.png" alt="Número Teléfono">+54 11 1111 1111</a></li>
+                        <li><img width="35" src="../assets/images/icons/mail.png" alt="Dirección Mail"> consultas@all4sky.com.ar</a></li>
+                        <li><img width="35" src="../assets/images/icons/whatsapp.png" alt="Número Whatsapp"> +54 911 1111 1111</a></li>
+                        <li><img width="35" src="../assets/images/icons/phone.png" alt="Número Teléfono"> +54 11 1111 1111</a></li>
                     </ul>
                 </div>
 
@@ -132,5 +166,6 @@
         
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>        
     </body>
 </html>

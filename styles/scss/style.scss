@@ -13,18 +13,22 @@
 //Footer
 @import "./layouts/footer";
 
-body {    
+body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(219, 234, 243);
 }
 
+ul {
+    padding-left: 0px;
+}
+
 #gridindex {
     display: grid;
-    grid-template-areas: 
-    "header     header      header "
-    "tiraimg    portada     portada"
-    "tiraimg    aspirantes  aspirantes"
-    "footer     footer      footer ";
+    grid-template-areas:
+        "header     header      header "
+        "tiraimg    portada     portada"
+        "tiraimg    aspirantes  aspirantes"
+        "footer     footer      footer ";
     min-height: 140vh;
     grid-template-columns: 15% 1fr 0.5fr;
     grid-template-rows: 135px 50% auto auto;
@@ -34,7 +38,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: normal;    
+        align-content: normal;
         align-items: center;
         grid-area: portada;
         text-align: center;
@@ -44,11 +48,11 @@ body {
                 margin-top: 80px;
                 font-size: 70px;
             }
-        
+
             p {
                 margin: 30px 0px;
                 font-size: 26px;
-                max-width: 65%;
+                max-width: 83%;
                 text-align: center;
                 display: inline-block;
             }
@@ -62,27 +66,28 @@ body {
         justify-content: space-evenly;
         margin-top: 30px;
         margin-bottom: 60px;
-    
+
         .aspirante {
             width: 320px;
-            height: 188px;
-            margin: 20px;
+            height: 230px;
+            margin: 50px;
             font-size: 24px;
             text-align: center;
             background-color: burlywood;
             box-shadow: $shadow;
             border-radius: 20px;
             border: $border;
-        
+
             a {
                 text-align: center;
                 color: cadetblue;
                 background-color: blanchedalmond;
-                border-radius: 4px;    
+                border-radius: 4px;
+                text-decoration: none;
             }
-        
+
             p {
-                margin: 20px;    
+                margin: 20px;
             }
         }
     }
@@ -90,11 +95,11 @@ body {
 
 #gridcursos {
     display: grid;
-    grid-template-areas: 
-    "header     header     "
-    "tiraimg    maincursos"
-    "tiraimg    maincursos"
-    "footer     footer ";
+    grid-template-areas:
+        "header     header     "
+        "tiraimg    maincursos"
+        "tiraimg    maincursos"
+        "footer     footer ";
     min-height: 140vh;
     grid-template-columns: 15% auto;
     grid-template-rows: 135px 50% auto auto;
@@ -103,9 +108,9 @@ body {
 #gridmision {
     display: grid;
     grid-template-areas:
-    "header     header"
-    "tiraimg    mainmision"
-    "footer     footer";
+        "header     header"
+        "tiraimg    mainmision"
+        "footer     footer";
     min-height: 140vh;
     grid-template-columns: 15% 1fr;
     grid-template-rows: 135px auto auto;
@@ -113,10 +118,10 @@ body {
 
 #gridinversores {
     display: grid;
-    grid-template-areas:    
-    "header     header"
-    "tiraimg    inversores"
-    "footer     footer";
+    grid-template-areas:
+        "header     header"
+        "tiraimg    inversores"
+        "footer     footer";
     min-height: 140vh;
     grid-template-columns: 15% 1fr;
     grid-template-rows: 135px auto auto;
@@ -130,47 +135,49 @@ body {
         border: $border ;
         border-radius: 10px;
         box-shadow: $shadow;
-    
+
         #imginv1 {
             max-width: 90%;
             box-shadow: $shadow;
         }
-    
+
         #imginv2 {
             max-width: 90%;
             box-shadow: $shadow;
         }
-        
+
         #imginv3 {
             max-width: 90%;
-            box-shadow: $shadow;;
+            box-shadow: $shadow;
+            ;
         }
-        
+
         #imginv4 {
             max-width: 90%;
-            box-shadow: $shadow;;
+            box-shadow: $shadow;
+            ;
         }
     }
 }
 
 #piloto1 {
-    width: 40%;
+    width: 60%;
     border-radius: 12px;
     box-shadow: $shadow;
 }
 
 #piloto2 {
-    width: 40%;
+    width: 60%;
     border-radius: 12px;
     box-shadow: $shadow;
 }
 
 #youtube {
     padding: 0 20px;
-    border-radius: 250px;    
+    border-radius: 250px;
 }
 
-#tiraimg{
+#tiraimg {
     grid-area: tiraimg;
     margin-left: 5px;
     background-image: url(../../assets/images/tirafull.jpg);
@@ -190,7 +197,6 @@ main {
 
     grid-area: mainmision;
     margin-top: 100px;
-    /* font-size: 26px; */
     max-width: 75%;
 }
 
@@ -200,10 +206,12 @@ main {
     color: cadetblue;
     background-color: blanchedalmond;
     border-radius: 4px;
+    text-decoration: none;
 }
 
 #mainmision article img {
     margin-right: 20px;
+    margin-bottom: 35px;
     border: $border;
 }
 
@@ -211,46 +219,49 @@ main {
     grid-area: maincursos;
     margin-top: 90px;
     font-size: 26px;
-    
-    h2{
+
+    h2 {
         font-size: 70px;
         text-align: center;
     }
 
-    #cursos{
-        display: flex;    
+    #cursos {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        overflow-x: hidden;
 
         .curso {
             max-width: 450px;
-            margin: 40px;
-            /* padding: 10px;
-            font-size: 24px; */
+            margin: 50px;
+            padding: 40px;
             text-align: center;
             background-color: rgb(214, 236, 185);
             border: $border;
             box-shadow: $shadow;
-            border-radius: 20px;    
+            border-radius: 20px;
+
             a {
                 padding: 0 10px;
                 text-align: center;
                 color: cadetblue;
                 background-color: blanchedalmond;
                 border-radius: 4px;
+                text-decoration: none;
             }
         }
     }
 
-    #plancarrera {    
+    #plancarrera {
         max-width: 90%;
-        box-shadow: $shadow;    
+        box-shadow: $shadow;
+        margin: 60px 0;
     }
 }
 
 #gridconsultas {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "header     header"
     "tiraimg    consultas"
     "footer     footer";
@@ -260,15 +271,19 @@ main {
 }
 
 #mainconsultas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     grid-area: consultas;
     margin-right: 20px;
 }
 
 #imgLanding {
-    width: 80%;
+    width: 100%;
     border-radius: 12px;
     border: $border;
-    box-shadow: $shadow;;
+    box-shadow: $shadow;
+    ;
 }
 
 #fieldset {
@@ -276,12 +291,37 @@ main {
 }
 
 #formconsulta {
-    padding: 12px;
+    padding: 50px;
+    border: solid 2px gray;
+    border-radius: 12px;
+}
+
+.navbar {
+    display: none;
+}
+
+#mainconsultas {
+    #formconsulta {
+        .sendC {
+            background-color: #f8d696;
+            text-align: center;
+            cursor: pointer;
+            padding: 5px 20px;
+            border-radius: 12px;
+            border: 2px solid rgb(161, 153, 153);
+            margin-top: 17px;
+        }
+
+        .sendC:hover {
+            background-color: #ec9e37;
+            box-shadow: $shadow;
+        }
+    }
 }
 
 @media screen and (max-width: 1100px) {
 
-    header nav ul li {        
+    header .navBarDesktop ul li {
         font-size: 18px;
     }
 
@@ -295,7 +335,7 @@ main {
     }
 
     #portada {
-        flex-direction: column;    
+        flex-direction: column;
     }
 
     #aspirantes {
@@ -309,16 +349,16 @@ main {
 
     #gridindex #portada div h2 {
         margin-top: 80px;
-        font-size: 49px;   
+        font-size: 49px;
     }
 
     #gridindex #portada div p {
-        font-size: 22px;   
+        font-size: 22px;
     }
 
     #gridindex #aspirantes .aspirante {
         font-size: 18px;
-        height: 132px;
+        height: 160px;
     }
 
     #youtube {
@@ -326,15 +366,15 @@ main {
         height: 65%;
     }
 
-    #plancarrera {    
-        width: 85%;        
+    #plancarrera {
+        width: 85%;
     }
 
     .curso {
         font-size: 100%;
     }
 
-    .curso h2{
+    .curso h2 {
         font-size: 70px;
     }
 
@@ -349,10 +389,10 @@ main {
     #mainInversores {
         font-size: 20px;
 
-         #inversores {
-             img {
+        #inversores {
+            img {
                 width: 80%;
-             }
+            }
         }
     }
 
@@ -367,12 +407,57 @@ main {
     #cursos {
         font-size: 70%;
     }
+
+    #piloto1 {
+        width: 90%;
+    }
+
+    #piloto2 {
+        width: 90%;
+    }
+
 }
 
 @media screen and (max-width: 568px) {
 
-    header nav ul li a {        
-        font-size: 8px;
+    #gridindex {
+        grid-template-rows: 61px 50% auto auto;
+    }
+
+    #gridmision {
+        grid-template-rows: 61px 65% auto;
+    }
+
+    #gridcursos {
+        grid-template-rows: 61px 50% auto auto;
+    }
+
+    #gridinversores {
+        grid-template-rows: 61px 60% auto auto;
+    }
+
+    #gridconsultas {
+        grid-template-rows: 61px 60% auto;
+    }
+
+    .navBarDesktop {
+        display: none;
+    }
+
+    header .logoname {
+        display: none;
+    }
+
+    .navbar {
+        display: initial;
+        background-image: url("../../assets/images/cielo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+    #logonav {
+        width: 30%;
     }
 
     #aspirantes {
@@ -380,25 +465,31 @@ main {
     }
 
     footer {
-        padding: 20px;
+        padding: 25px;
         justify-content: space-around
     }
 
-    #gridindex #portada div h2 {
-        font-size: 30px;   
-    }
+    #gridindex #portada {
+        margin-right: -7px;
 
-    #gridindex #portada div p {
-        font-size: 16px;   
+        div {
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
     }
 
     #gridindex #aspirantes .aspirante {
         font-size: 14px;
-        height: 111px;
+        height: 33%;
     }
 
     #plancarrera {
-        width: 85%;        
+        width: 85%;
     }
 
     #artmis1 {
@@ -427,5 +518,35 @@ main {
 
     #cursos {
         font-size: 40%;
+    }
+
+    #piloto1 {
+        width: 90%;
+    }
+
+    #piloto2 {
+        width: 90%;
+    }
+
+    #maincursos {
+
+        #cursos {
+            .curso {
+                margin: 15px;
+                padding: 10px;
+
+                p {
+                    font-size: 14px;
+                }
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    #mainmision article a {
+        font-size: 10px;
     }
 }
