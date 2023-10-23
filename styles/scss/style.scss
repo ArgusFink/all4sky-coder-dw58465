@@ -199,13 +199,15 @@ main {
     grid-area: mainmision;
 }
 
-#mainmision article a {
-    padding: 0 10px;
-    text-align: center;
-    color: cadetblue;
-    background-color: blanchedalmond;
-    border-radius: 4px;
-    text-decoration: none;
+#mainmision article {
+    a {
+        padding: 0 10px;
+        text-align: center;
+        color: #000;
+        background-color: blanchedalmond;    
+        border-radius: 4px;
+        text-decoration: none;
+    }
 }
 
 #mainmision article img {
@@ -243,7 +245,8 @@ main {
             a {
                 padding: 0 10px;
                 text-align: center;
-                color: cadetblue;
+                color: #000;
+                border: solid 2px gray;
                 background-color: blanchedalmond;
                 border-radius: 4px;
                 text-decoration: none;
@@ -465,7 +468,7 @@ main {
     }
 
     #logonav {
-        width: 30%;
+        width: 38%;
     }
 
     #aspirantes {

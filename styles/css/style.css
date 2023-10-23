@@ -224,7 +224,7 @@ main {
 #mainmision article a {
   padding: 0 10px;
   text-align: center;
-  color: cadetblue;
+  color: #000;
   background-color: blanchedalmond;
   border-radius: 4px;
   text-decoration: none;
@@ -264,7 +264,8 @@ main {
 #maincursos #cursos .curso a {
   padding: 0 10px;
   text-align: center;
-  color: cadetblue;
+  color: #000;
+  border: solid 2px gray;
   background-color: blanchedalmond;
   border-radius: 4px;
   text-decoration: none;
@@ -432,7 +433,7 @@ main {
     width: 100%;
   }
   #logonav {
-    width: 30%;
+    width: 38%;
   }
   #aspirantes {
     align-items: center;
